@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3b83db5db.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+    <title>Tell</title>
+</head>
+<body>
+
+    <header>
+        <img class="profile_img pointer" src="imgs/perfilImage1.png" alt="Profile Image" title="Profile Image">
+        <div class="logo">
+            <img class="pointer" src="imgs/logo.png" alt="Logo" title="Logo">
+        </div>
+        <div class="settings pointer"><i class="fa-solid fa-gear"></i></div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="post_box shadow">
+                <textarea name="" id="" cols="30" rows="10">Tell Something...</textarea>
+                <div class="buttons">
+                    <div class="hug_hug shadow">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                    <button class="post_button shadow">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="other_posts shadow">
+                <div class="user_info">
+                    <img src="imgs/perfilImage2.png" alt="User Image" title="User Image">
+                    <p>Yuna Tanaka</p>
+                </div>
+
+                <div class="content">
+                    <p>
+                        Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!!
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <i class="fa-solid fa-share"></i>
+                    <i class="fa-regular fa-heart" id="heart1" onclick="like('heart1')"></i>
+                </div>
+
+            </div>
+
+            <div class="other_posts shadow">
+                <div class="user_info">
+                    <img src="imgs/perfilImage3.png" alt="User Image" title="User Image">
+                    <p>Haruto Watanabe</p>
+                </div>
+
+                <div class="content">
+                    <p>
+                        Eiiitaaa Mainhaaa!!
+                    </p>
+                    <img src="imgs/praia.png" alt="Content Image" title="Content Img">
+                </div>
+
+                <div class="buttons">
+                    <i class="fa-solid fa-share"></i>
+                    <i class="fa-regular fa-heart" id="heart2" onclick="like('heart2')"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <div class="footer_info">
+                <p>Contatos</p>
+                <ul>
+                    <li>support@tell.com</li>
+                    <li>+55 0800 660 235</li>
+                </ul>
+            </div>
+
+            <div class="footer_info">
+                <p>Sobre</p>
+                <ul>
+                    <li>Politíca e Privacidade</li>
+                    <li>Termos de Uso</li>
+                </ul>
+            </div>
+
+            <div class="footer_info">
+                <p>Parceiros</p>
+                <ul>
+                    <li>logonoticias.com</li>
+                    <li>varvarejo.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="developer">
+            Desenvolvido por <br> Gustavo Zeglan ©
+        </p>
+
+    </footer>
+
+</body>
+
+<script>
+
+    function like(id) {
+        const heart = document.getElementById(id);
+        const fill = "fa-solid";
+        const empty = "fa-regular";
+
+        if (heart.classList.contains(empty)) {
+            heart.classList.add(fill);
+            heart.classList.remove(empty);
+        }  else  {
+            heart.classList.add(empty);
+            heart.classList.remove(fill);
+        }
+    }
+
+</script>
+
+</html>
