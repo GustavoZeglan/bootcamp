@@ -1,0 +1,15 @@
+header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_img {
+    border-radius: 50%;
+}
+
+.settings i {
+    font-size: 26px;
+    color: var(--blue);
+}

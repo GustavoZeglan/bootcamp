@@ -1,0 +1,23 @@
+footer {
+    padding: 16px;
+    font-size: 14px;
+    background-color: var(--light-gray);
+}
+
+footer p {
+    margin-bottom: 2px;
+    font-weight: 900;
+}
+
+footer ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+
+footer ul li {
+    list-style: outside;
+}
+
+footer .developer {
+    text-align: center;
+}
