@@ -1,0 +1,50 @@
+@media screen and (min-width: 700px) {
+
+    header {
+        padding-left: 36px;
+        padding-right: 36px;
+        gap: 20px;
+    }
+
+    header .logo {
+        flex-grow: 1;
+    }
+
+    header .profile_img {
+        order: 1;
+    }
+
+    header .settings {
+        order: 2;
+    }
+
+
+    main {
+        justify-content: center;
+    }
+
+    .other_posts {
+        width: 40%;
+    }
+
+    .post_box {
+        width: 40%;
+    }
+
+    .content img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    footer > div {
+        display: flex;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    footer > p > br {
+        display: none;
+    }
+
+
+}

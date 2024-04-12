@@ -1,0 +1,20 @@
+@import "styles/reset.css";
+@import "styles/header.css";
+@import "styles/post_box.css";
+@import "styles/main.css";
+@import "styles/other_posts.css";
+@import "styles/footer.css";
+@import "styles/media-query.css";
+
+:root{
+    --blue:#2D79C7;
+    --white:#ffffff;
+    --black:#000000;
+    --light-gray:#D9D9D9;
+    --dark-gray:#ACACAC;
+}
+
+body {
+    height: 100vh;
+    font-family: Inter, sans-serif;
+}
